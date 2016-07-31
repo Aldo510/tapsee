@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-xs-1 col-sm-4"><br></div>
+  <div class="col-xs-10 col-sm-4 box">
+    <%= form_for :word, :html => {:id => "wordform"} do |f| %>
+      <%= f.label :Español_a_morse, class: "form-control" %> </br>
+      <%= f.text_field :palabra, class: "form-control" %><br/>
+      <%= f.submit "Cambiar a morse", class: "btn btn-success" %>
+    <% end %>
+    <p>
+      Palabra en morse:
+    </p>
+    <div id="word">
+    </div>
+  </div>
+  <div class="col-xs-1 col-sm-4"></div>
+</div>

@@ -1,0 +1,88 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+header{
+  color: white;
+    background-color: #0D0106;
+    width: 100%;
+    height: 50px;
+}// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+body {
+  padding-top: 100px;
+  height: 100%;
+  width: 100%;
+}
+
+/*header*/
+
+#logo img{
+  float: left;
+  max-width: 200px;
+  border-radius: 31px;
+  padding-bottom: 5px;;
+  padding-top: 5px;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+header {
+  nav{
+  float:right;
+  margin-right:0px;
+  }
+  .container{
+  width:100%;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  }
+  #login{
+    margin-right: 70px;
+  }
+}
+
+/* footer */
+footer {
+  margin-top: 20px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-medium-light;
+  color: gray;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  a {
+    color: gray;
+    &:hover {
+      color: gray;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
+/* box style*/
+.box{
+  border-right: 1px dashed #16bfc0;
+  border-left: 1px dashed #16bfc0;
+  height: 100vh;
+}
